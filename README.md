@@ -1,2 +1,2 @@
 # 3JS-Upper-Mountains-Expidition
-An atmospheric walking simulator in a mysterious mountaintops. 
+An atmospheric walking simulator set in a mysterious mountaintops. 
