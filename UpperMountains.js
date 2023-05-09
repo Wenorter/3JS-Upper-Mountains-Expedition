@@ -1,12 +1,12 @@
 import * as THREE from 'three';
-import {GUI} from './build/dat.gui.module.js';
-import {FirstPersonControls} from './build/FirstPersonControls.js';
-import {DragControls} from './build/DragControls.js';
-import {EffectComposer} from './build/EffectComposer.js';
-import {RenderPass} from './build/RenderPass.js';
-import {FilmPass} from './build/FilmPass.js';
-import {makeItGrain} from './build/GrainPass.js';
-import {FBXLoader} from './build/FBXLoader.js';
+import {GUI} from './dist/build/dat.gui.module.js';
+import {FirstPersonControls} from './dist/build/FirstPersonControls.js';
+import {DragControls} from './dist/build/DragControls.js';
+import {EffectComposer} from './dist/build/EffectComposer.js';
+import {RenderPass} from './dist/build/RenderPass.js';
+import {FilmPass} from './dist/build/FilmPass.js';
+import {makeItGrain} from './dist/build/GrainPass.js';
+import {FBXLoader} from './dist/build/FBXLoader.js';
 
 //===========================================
 //=======Upper Mountains Expidition==========
