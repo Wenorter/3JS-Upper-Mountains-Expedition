@@ -303,7 +303,7 @@ function loadMountain()
 {
     const fbxLoader = new FBXLoader(loadingManager);
 
-    fbxLoader.load("../model/SnowyMountain.fbx", function(mountain)
+    fbxLoader.load("./model/SnowyMountain.fbx", function(mountain)
         {
             const textureLoader = new THREE.TextureLoader();
             const diffuseTexture = textureLoader.load("./textures/snowy_mountain/diffuse.png");
