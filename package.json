@@ -1,0 +1,15 @@
+{
+  "name": "uppermountainsexp",
+  "version": "1.0.0",
+  "description": "An atmospheric walking simulator set in a mysterious mountaintops.",
+  "main": "UpperMountains.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Wenorter",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
