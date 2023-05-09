@@ -1,12 +1,12 @@
 import * as THREE from 'three';
-import {GUI} from './build/dat.gui.module.js';
-import {FirstPersonControls} from './build/FirstPersonControls.js';
-import {DragControls} from './build/DragControls.js';
-import {EffectComposer} from './build/EffectComposer.js';
-import {RenderPass} from './build/RenderPass.js';
-import {FilmPass} from './build/FilmPass.js';
-import {makeItGrain} from './build/GrainPass.js';
-import {FBXLoader} from './build/FBXLoader.js';
+import {GUI} from 'https://wenorter.github.io/3JS-Upper-Mountains-Expedition/build/dat.gui.module.js';
+import {FirstPersonControls} from 'https://wenorter.github.io/3JS-Upper-Mountains-Expedition/build/FirstPersonControls.js';
+import {DragControls} from 'https://wenorter.github.io/3JS-Upper-Mountains-Expedition/build/DragControls.js';
+import {EffectComposer} from 'https://wenorter.github.io/3JS-Upper-Mountains-Expedition/build/EffectComposer.js';
+import {RenderPass} from 'https://wenorter.github.io/3JS-Upper-Mountains-Expedition/build/RenderPass.js';
+import {FilmPass} from 'https://wenorter.github.io/3JS-Upper-Mountains-Expedition/build/FilmPass.js';
+import {makeItGrain} from 'https://wenorter.github.io/3JS-Upper-Mountains-Expedition/build/GrainPass.js';
+import {FBXLoader} from 'https://wenorter.github.io/3JS-Upper-Mountains-Expedition/build/FBXLoader.js';
 
 //===========================================
 //=======Upper Mountains Expidition==========
