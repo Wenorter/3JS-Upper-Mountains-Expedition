@@ -1,12 +1,12 @@
 import * as THREE from 'three';
-import {GUI} from '../build/dat.gui.module.js';
-import {FirstPersonControls} from '../build/FirstPersonControls.js';
-import {DragControls} from '../build/DragControls.js';
-import {EffectComposer} from '../build/EffectComposer.js';
-import {RenderPass} from '../build/RenderPass.js';
-import {FilmPass} from '../build/FilmPass.js';
-import {makeItGrain} from '../build/GrainPass.js';
-import {FBXLoader} from '../build/FBXLoader.js';
+import {GUI} from './build/dat.gui.module.js';
+import {FirstPersonControls} from './build/FirstPersonControls.js';
+import {DragControls} from './build/DragControls.js';
+import {EffectComposer} from './build/EffectComposer.js';
+import {RenderPass} from './build/RenderPass.js';
+import {FilmPass} from './build/FilmPass.js';
+import {makeItGrain} from './build/GrainPass.js';
+import {FBXLoader} from './build/FBXLoader.js';
 
 //===========================================
 //=======Upper Mountains Expidition==========
@@ -176,7 +176,7 @@ camera.add(listener);
 const audioLoader = new THREE.AudioLoader();
 const backgroundMusic = new THREE.Audio(listener);
 
-audioLoader.load("../music/Alberich - Upper Mountains.mp3", function(buffer)
+audioLoader.load("./music/Alberich - Upper Mountains.mp3", function(buffer)
 {
     backgroundMusic.setBuffer(buffer);
     backgroundMusic.setLoop(true);
@@ -306,11 +306,11 @@ function loadMountain()
     fbxLoader.load("../model/SnowyMountain.fbx", function(mountain)
         {
             const textureLoader = new THREE.TextureLoader();
-            const diffuseTexture = textureLoader.load("../textures/snowy_mountain/diffuse.png");
-            const normalTexture = textureLoader.load("../textures/snowy_mountain/normal.png");
-            const roughTexture = textureLoader.load("../textures/snowy_mountain/glossiness.png");
-            const metallicTexture = textureLoader.load("../textures/snowy_mountain/metallic.png");
-            const heightTexture = textureLoader.load("../textures/snowy_mountain/height.png");
+            const diffuseTexture = textureLoader.load("./textures/snowy_mountain/diffuse.png");
+            const normalTexture = textureLoader.load("./textures/snowy_mountain/normal.png");
+            const roughTexture = textureLoader.load("./textures/snowy_mountain/glossiness.png");
+            const metallicTexture = textureLoader.load("./textures/snowy_mountain/metallic.png");
+            const heightTexture = textureLoader.load("./textures/snowy_mountain/height.png");
 
             mountain.traverse(function(child){
                 if (child.isMesh) 
@@ -371,14 +371,14 @@ function loadRadioTower()
     //there are two radio tower models
     //this one is old soviet radio tower with stairs and building at the base
     const fbxLoader = new FBXLoader(loadingManager);
-    fbxLoader.load("../model/SovietRadioTower.fbx", (radioTower) =>
+    fbxLoader.load("./model/SovietRadioTower.fbx", (radioTower) =>
         {
             const textureLoader = new THREE.TextureLoader();
-            const diffuseTexture = textureLoader.load("../textures/soviet_radio_tower/diffuse.png");
-            const normalTexture = textureLoader.load("../textures/soviet_radio_tower/normal.png");
-            const roughTexture = textureLoader.load("../textures/soviet_radio_tower/roughness.png");
-            const metallicTexture = textureLoader.load("../textures/soviet_radio_tower/metallic.png");
-            const aoTexture = textureLoader.load("../textures/soviet_radio_tower/ao.png");
+            const diffuseTexture = textureLoader.load("./textures/soviet_radio_tower/diffuse.png");
+            const normalTexture = textureLoader.load("./textures/soviet_radio_tower/normal.png");
+            const roughTexture = textureLoader.load("./textures/soviet_radio_tower/roughness.png");
+            const metallicTexture = textureLoader.load("./textures/soviet_radio_tower/metallic.png");
+            const aoTexture = textureLoader.load("./textures/soviet_radio_tower/ao.png");
 
             radioTower.traverse(function(child){
                 if (child.isMesh) 
@@ -409,8 +409,8 @@ function loadBroadcastTower()
     //this one is telecommunications antenna tower
     const fbxLoader = new FBXLoader(loadingManager);
     //all textures are imported as part of .fbx material settings
-    fbxLoader.setResourcePath("../textures/broadcast_tower/");
-    fbxLoader.load("../model/BroadcastTower.fbx", (broadcastTower) =>
+    fbxLoader.setResourcePath("./textures/broadcast_tower/");
+    fbxLoader.load("./model/BroadcastTower.fbx", (broadcastTower) =>
         {          
             broadcastTower.traverse(function(child){
                 if (child.isMesh) 
@@ -435,8 +435,8 @@ function loadWaterTower()
 {
     const fbxLoader = new FBXLoader(loadingManager);
     //all textures are imported as part of .fbx material settings
-    fbxLoader.setResourcePath("../textures/water_tower/");
-    fbxLoader.load("../model/WaterTower.fbx", (waterTower) =>
+    fbxLoader.setResourcePath("./textures/water_tower/");
+    fbxLoader.load("./model/WaterTower.fbx", (waterTower) =>
         {         
             waterTower.traverse(function(child){
                 if (child.isMesh) 
@@ -459,8 +459,8 @@ function loadWaterTower()
 function loadOrganGun()
 {
     const fbxLoader = new FBXLoader(loadingManager);
-    fbxLoader.setResourcePath("../textures/organ_gun/");
-    fbxLoader.load("../model/OrganGun.fbx", (organGun) =>
+    fbxLoader.setResourcePath("./textures/organ_gun/");
+    fbxLoader.load("./model/OrganGun.fbx", (organGun) =>
         {         
             organGun.traverse(function(child){
                 if (child.isMesh) 
@@ -483,8 +483,8 @@ function loadOrganGun()
 function loadFlare()
 {
     const fbxLoader = new FBXLoader(loadingManager);
-    fbxLoader.setResourcePath("../textures/flare/");
-    fbxLoader.load("../model/Flare.fbx", (flare) =>
+    fbxLoader.setResourcePath("./textures/flare/");
+    fbxLoader.load("./model/Flare.fbx", (flare) =>
         {         
             flare.traverse(function(child){
                 if (child.isMesh) 
