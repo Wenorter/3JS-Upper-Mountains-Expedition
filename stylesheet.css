@@ -32,7 +32,7 @@ label{
 
 @font-face {
     font-family: titleFont;
-    src: url(../font/MB-Thin_Worms.ttf);
+    src: url(./font/MB-Thin_Worms.ttf);
 }
 
 a {
